@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body,html{
+        height: 100%;
+        width: 100%;
+      }
+      .container {
+        height: 200px;
+        width: 100%;
+       
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap:7px;
+       
+      }
+      .dots {
+        height: 20px;
+        width: 20px;
+        border-radius:50% ;
+        animation:bounce 1.4s infinite ease-in-out;
+
+      }
+      .container .dots:nth-child(1) {
+        background-color:blue;
+        animation-delay: 0s;
+  
+      }
+      .container .dots:nth-child(2) {
+        background-color: red;
+        animation-delay: 0.2s;
+       
+      }
+      .container .dots:nth-child(3) {
+        background-color: yellow;
+        animation-delay: 0.4s; 
+      }
+      .container .dots:nth-child(4) {
+        background-color: green;
+        animation-delay: 0.6s;
+        
+      }
+      @keyframes bounce{
+        0%,100%{
+            transform: translateY(0px);
+        }
+        50%{
+            transform: translateY(-22px);
+        }
+      }
+.container1{
+    height:400px;
+    width: 100%;
+    
+    display: flex;
+    gap:8px;
+    
+    justify-content: center;
+    align-items: end;
+}
+.bar{
+
+
+    border-radius: 10%;  
+   
+}
+.bar1{ animation: increaseBar1 1s ease-in-out infinite;
+  
+    height: 100px;
+    width: 50px;    background-image: linear-gradient(#ff00ff,blueviolet);
+}
+.bar2{ animation: increaseBar2 1s ease-in-out infinite;
+
+    background-image: linear-gradient(#ff00ff,blueviolet);
+    height: 130px;
+    width: 50px;
+}
+.bar3{ animation: increaseBar3 1s ease-in-out infinite;
+ 
+    background-color: fuchsia;
+    height: 250px;
+    width: 50px;
+}
+.bar4{ animation: increaseBar4 1s ease-in-out infinite;
+    background-image: linear-gradient(#ff00ff,blueviolet);
+    height: 140px;
+    width: 50px;
+}
+.bar5{ animation: increaseBar5 1s ease-in-out infinite;
+    background-image: linear-gradient(#ff00ff,blueviolet); 
+    height: 120px;
+    width: 50px;
+}
+.bar6{ animation: increaseBar6 1s ease-in-out infinite;
+    background-image: linear-gradient(#ff00ff,blueviolet);
+    height: 80px;
+    width: 50px;
+}
+@keyframes increaseBar1 {
+        0% { height: 0px; }
+       
+      }
+      @keyframes increaseBar2 {
+        0% { height: 70px; }
+      
+      }
+      @keyframes increaseBar3 {
+        0% { height: 150px; }
+      
+      }
+      @keyframes increaseBar4 {
+        0% { height: 110px; }
+      
+      }
+      @keyframes increaseBar5 {
+        0% { height: 50px; }
+      
+      }
+      @keyframes increaseBar6 {
+        0% { height: 10px; }
+      
+      }
+h1{
+    background-color: black;
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+}
+    </style>
+  </head>
+  <body>
+    <h1>Task1</h1>
+    <div class="container">
+      <div class="dots dot1"></div>
+      <div class="dots dot2"></div>
+      <div class="dots dot3"></div>
+      <div class="dots dot4"></div>
+    </div>
+<h1>Task2</h1>
+    <div class="container1">
+        <div class="bar bar1"></div>
+        <div class="bar bar2"></div>
+        <div class="bar bar3"></div>
+        <div class="bar bar4"></div>
+        <div class="bar bar5"></div>
+        <div class="bar bar6"></div>
+    </div>
+  </body>
+</html>
