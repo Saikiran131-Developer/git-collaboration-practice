@@ -4,7 +4,7 @@ while num<=100:
     print(num)
     num+=1
 #2.1
-for i in range (0,100,-1):
+for i in range (100,0,-1):
     print(i)
 #2.2    
 num1=100
